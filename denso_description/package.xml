@@ -1,0 +1,21 @@
+<package>
+  <name>denso_description</name>
+  <version>0.0.1</version>
+  <description>
+   <p>This package provides the robot description for DENSO robots.</p>
+  </description>
+  <maintainer email="fsuarez.ruiz@pmail.ntu.edu.sg">Francisco Suarez Ruiz</maintainer>
+  <license>BSD</license>
+  <author email="fsuarez.ruiz@pmail.ntu.edu.sg">Francisco Suarez Ruiz</author>
+  <url type="website">https://github.com/fsuarez6/denso_simulator</url>
+  <url type="bugtracker">https://github.com/fsuarez6/denso_simulator/issues</url>
+  <url type="repository">https://github.com/fsuarez6/denso_simulator</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>robotiq_description</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>rviz</run_depend>
+
+</package>
