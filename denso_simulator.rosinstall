@@ -1,2 +1,3 @@
 - git: {local-name: denso_simulator,  uri: 'https://github.com/fsuarez6/denso_simulator.git', version: master}
+- git: {local-name: openrave_catkin,  uri: 'https://github.com/crigroup/openrave_catkin.git', version: master}
 - git: {local-name: robotiq,          uri: 'https://github.com/crigroup/robotiq.git',         version: master}
