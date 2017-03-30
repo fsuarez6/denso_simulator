@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <launch>
   <!-- launch file parameters -->
-  <arg name="namespace"   default="denso" />
   <arg name="paused"      default="false"/>
   <arg name="gui"         default="true"/>
   <arg name="rate"        default="125" />
@@ -13,10 +12,8 @@
     <arg name="gui" value="$(arg gui)"/>
   </include>
   
-  <group ns="$(arg namespace)">
-    <!-- send robot urdf to param server -->
-    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find denso_description)/urdf/denso_vs060_robot.urdf.xacro'" />
-    <!-- spawn robot in gazebo -->
-    <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot" output="screen" />
-  </group>
+  <!-- send robot urdf to param server -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find denso_description)/urdf/denso_vs060_robot.urdf.xacro'" />
+  <!-- spawn robot in gazebo -->
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot" output="screen" />
 </launch>

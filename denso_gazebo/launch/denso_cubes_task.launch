@@ -11,7 +11,7 @@
   
   <!-- startup simulated world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name"  value="$(find denso_gazebo)/worlds/denso_robot_base.world"/>
+    <arg name="world_name"  value="$(find denso_gazebo)/worlds/denso_cubes_task.world"/>
     <arg name="paused"      value="$(arg paused)"/>
     <arg name="debug"       value="$(arg debug)"/>
     <arg name="gui"         value="$(arg gui)"/>

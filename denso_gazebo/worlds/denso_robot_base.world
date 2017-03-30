@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-  <world name="robot_base">
+  <world name="denso_robot_base">
     <gravity>0 0 -9.81</gravity>
     <physics name="default_physics" default="0" type="ode">
       <max_step_size>0.001</max_step_size>
@@ -22,7 +22,7 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
     <!-- The robot base -->
-    <model name="robot_base">
+    <model name="denso_base">
       <include>
         <uri>model://denso_base</uri>
         <pose>0 0 0 0 0 0</pose>
