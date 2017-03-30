@@ -1,0 +1,22 @@
+<launch>
+  
+  <arg name="use_controller_manager" default="true" />
+  <arg name="controller_manager_name" default="simple_controller_manager" />
+  <arg name="moveit_controller_manager" default="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
+  
+  <!-- Set the param that trajectory_execution_manager needs to find the controller plugin -->
+  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+
+  <!-- The rest of the params are specific to this plugin -->
+
+  <!-- If a controller manager is running (the generic one, not the MoveIt! one), we can talk to is via action interfaces.
+       But we need to know its name. -->
+  <param name="controller_manager_name" value="$(arg controller_manager_name)" />
+
+  <!-- Flag indicating whether the controller manager should be used or not -->
+  <param name="use_controller_manager" value="$(arg use_controller_manager)" />
+  
+  <!-- load controller_list and controller_manager_ns -->
+  <rosparam file="$(find denso_moveit_config)/config/controllers.yaml"/>
+
+</launch>

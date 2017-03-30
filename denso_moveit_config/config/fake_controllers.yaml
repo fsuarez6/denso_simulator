@@ -1,0 +1,12 @@
+controller_list:
+  - name: fake_robotiq_85_gripper_controller
+    joints:
+      - robotiq_85_left_knuckle_joint
+  - name: fake_denso_robotiq_85_gripper_controller
+    joints:
+      - j1
+      - j2
+      - j3
+      - j4
+      - j5
+      - j6

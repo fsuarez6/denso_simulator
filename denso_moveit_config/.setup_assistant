@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: denso_description
+    relative_path: urdf/denso_robotiq_85_gripper.urdf.xacro
+  SRDF:
+    relative_path: config/denso_vs060.srdf
+  CONFIG:
+    author_name: Francisco Suarez-Ruiz
+    author_email: fsuarez6@gmail.com
+    generated_timestamp: 1490847097
