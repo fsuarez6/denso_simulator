@@ -32,28 +32,37 @@
     <!-- Table top is at (x,y,z) = (0.7, 0, 0.8) -->
     <!-- Table top size 0.9 x 0.9 -->
     <model name="cafe_table">
+      <static>true</static>
       <include>
         <uri>model://cafe_table</uri>
         <pose>0.7 0 0 0 0 0</pose>
       </include>
     </model>
+    <!-- Kinect -->
+    <model name="openni_kinect">
+      <static>true</static>
+      <pose>0.5 0 1.59 0 1.5708 0</pose>
+      <include>
+        <uri>model://openni_kinect</uri>
+      </include>
+    </model>
     <!-- Cubes -->
     <model name="cube01">
+      <pose>0.4 -0.2 0.775 0 0 0</pose>
       <include>
         <uri>model://wood_cube_5cm</uri>
-        <pose>0.6 -0.2 0.775 0 0 0</pose>
       </include>
     </model>
     <model name="cube02">
+      <pose>0.4 0 0.775 0 0 0</pose>
       <include>
         <uri>model://wood_cube_5cm</uri>
-        <pose>0.6 0 0.775 0 0 0</pose>
       </include>
     </model>
     <model name="cube03">
+      <pose>0.4 0.2 0.775 0 0 0</pose>
       <include>
         <uri>model://wood_cube_5cm</uri>
-        <pose>0.6 0.2 0.775 0 0 0</pose>
       </include>
     </model>
   </world>
