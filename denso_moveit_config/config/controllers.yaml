@@ -10,3 +10,9 @@ controller_list:
       - j4
       - j5
       - j6
+  - name: gripper_controller
+    action_ns: gripper_cmd
+    type: GripperCommand
+    default: true
+    joints:
+      - robotiq_85_left_knuckle_joint

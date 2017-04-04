@@ -6,6 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
   effort_controllers
   gazebo_ros
   gazebo_ros_control
+  gripper_action_controller
   joint_state_controller
   joint_trajectory_controller
   robot_state_publisher
